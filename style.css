@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: #111;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    display: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid red;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+.nav-links a.active-link {
+    color: red;
+}
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+
+    margin-top: 90px;
+}
+
+.hero h1 {
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+
+    color: gray;
+}
+
+/* BUTTON */
+
+button {
+    background-color: red;
+
+    color: black;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+
+    box-shadow: 0px 0px 25px red;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 120px;
+
+    padding: 0 40px 100px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #111;
+
+    padding: 30px;
+
+    width: 250px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0px 0px 20px red;
+}
+/* ABOUT SECTION */
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 120px;
+}
+
+.about-box {
+    background-color: #111;
+    width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.about-box:hover {
+    box-shadow: 0px 0px 25px red;
+    transform: scale(1.02);
+}
+
+.about-box h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    color: gray;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.more-info {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+.more-info.show {
+    display: block;
+}
+/* CONTACT SECTION */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.contact-box {
+    background-color: #111;
+    width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: black;
+    color: white;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: red;
+    box-shadow: 0px 0px 10px red;
+}
+.form-message {
+    margin-top: 15px;
+    font-size: 16px;
+    min-height: 20px;
+}
+
+.form-message.error {
+    color: red;
+}
+
+.form-message.success {
+    color: lightgreen;
+}
+.contact-form input.input-error,
+.contact-form textarea.input-error {
+    border-color: red;
+    box-shadow: 0px 0px 10px red;
+}
+/* FILTER BUTTONS */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: 1px solid red;
+    background-color: transparent;
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: red;
+    color: black;
+}
+
+.filter-btn.active {
+    background-color: red;
+    color: black;
+    box-shadow: 0px 0px 15px red;
+}
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: 1px solid red;
+
+    background-color: #111;
+    color: white;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 0px 0px 20px red;
+}
+
+.back-to-top.show-top {
+    display: flex;
+}
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    nav {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+
+.menu-btn {
+    display: block;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+nav a {
+    margin-left: 0;
+}
+.about-box {
+    width: 80%;
+}
+.contact-box {
+    width: 80%;
+}
+}

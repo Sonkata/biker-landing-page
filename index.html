@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biker Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+// Навигация
+<nav>
+    <h2>SONER</h2>
+
+    <button class="menu-btn">☰</button>
+
+    <div class="nav-links">
+        <a class="active-link" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+    <section class="hero" id="home">
+        <h1>Ride Beyond Limits.</h1>
+        <p>A dark cinematic website built with HTML and CSS.</p>
+        <button class="explore-btn">Explore</button>
+    </section>
+<section class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="performance">Performance</button>
+    <button class="filter-btn" data-category="design">Design</button>
+    <button class="filter-btn" data-category="learning">Learning</button>
+</section>
+//Секции карти 
+   <section class="cards"></section>
+<section class="about" id="about">
+    <div class="about-box">
+        <h2>About the Bike</h2>
+
+        <p class="about-text">    
+            A dark custom motorcycle concept built around speed,
+            control and cinematic street presence.
+        </p>
+<div class="more-info">
+            <p>
+                The concept is focused on a black pearl motorcycle look,
+                sharp road presence, clean details and a strong identity
+                that stands out in the city.
+            </p>
+        </div>
+        <button class="learn-btn">Learn More</button>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="contact-box">
+        <h2>Contact</h2>
+
+        <p>
+            Want to build something bold?
+            Send a message.
+        </p>
+
+<form class="contact-form" novalidate>
+    <input class="name-input" type="text" placeholder="Your Name">
+
+    <input class="email-input" type="email" placeholder="Your Email">
+
+    <textarea class="message-input" placeholder="Your Message"></textarea>
+
+    <button type="submit">Send Message</button>
+
+    <p class="form-message"></p>
+</form>
+    </div>
+</section>
+<button class="back-to-top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
